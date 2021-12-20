@@ -1,0 +1,29 @@
+.hero {
+    background-image: url('../Images/jnk.jpeg');
+    background-size: cover;
+}
+
+.hero-tentang {
+    background-image: url('../Images/tol-jasmar.jpeg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: gray;
+}
+
+.content {
+    height: 100vh;
+    align-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    line-height: 1.5;
+}
+
+.text-utama {
+    color: "#003565";
+}
