@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
-import { Modal, Button } from 'react-bootstrap'
+import { useNavigate } from "react-router-dom"
+import { Modal } from 'react-bootstrap'
 import axios from 'axios'
+import Cookies from 'js-cookie'
 
 const ModalLogin = (props) => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const navigate = useNavigate()
 
     const handleLogin = (e) => {
         e.preventDefault()
@@ -12,13 +15,22 @@ const ModalLogin = (props) => {
             email: email,
             password: password
         }
-        axios.post('https://6290-27-123-223-78.ngrok.io', dataSend, {
-            "Content-Type": "application/json",
-            'Access-Control-Allow-Origin': 'http://localhost:3001',
-            'Access-Control-Allow-Credentials': 'true'
+        axios.post(`${process.env.REACT_APP_API}/login`, dataSend, {
+            headers: {
+                'Content-Type' : 'application/json',
+                'Accept': 'application/json'
+            }
         })
         .then(res => {
-            console.log(res)
+            if(res.data.status === 200) {
+                Cookies.set('user_token', res.data.data.token)
+                navigate('/dashboard')
+            } else {
+                navigate("/")
+            }
+        })
+        .catch(err => {
+            console.log(err)
         })
     }
 

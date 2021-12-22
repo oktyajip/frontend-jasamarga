@@ -15,6 +15,8 @@ import Alur04 from '../Images/alur04.png'
 import Alur05 from '../Images/alur05.png'
 import Alur06 from '../Images/alur06.png'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
+import 'animate.css'
 
 const Beranda = () => {
     const [tabActive, setTabActive] = useState("1")
@@ -28,7 +30,7 @@ const Beranda = () => {
                         <Col className='content py-5 d-flex align-items-center'>
                             <div>
                                 <p className='text-sm font-weight-bold d-inline-block border rounded-pill p-2'>Reg. Online : 3 - 9 November 2021 Pk. 23:59 WIB</p>
-                                <h1 class="font-weight-bolder">Toll Road Industry Leader in Indonesia Needs Future Leader JET ROADSTER 2021</h1>
+                                <h1 className="font-weight-bolder animate__animated animate__bounceIn" style={{color: "#003565"}}>Toll Road Industry Leader in Indonesia Needs Future Leader JET ROADSTER 2021</h1>
                                 <p>Perhatian! PT Jasa Marga (Persero) Tbk tidak memungut biaya apapun selama proses seleksi.</p>
                                 <div>
                                     <button className='px-4 py-2 text-white mr-2' style={{backgroundColor:'#003565', borderRadius:"10px", border:"none"}}>Daftar</button>
@@ -58,8 +60,8 @@ const Beranda = () => {
                                 <p>Program Management Trainee Jasa Marga yang didesain untuk talenta muda terbaik yang ingin belajar, bertumbuh dan berkontribusi untuk Indonesia.</p>
                             </div>
                             <Row className='mb-3'>
-                                <Col md={6} className='bg-white shadow p-2'>
-                                    <Row className='align-items-center'>
+                                <Col md={5} className='bg-white shadow p-2 mx-2 animate__animated animate__fadeIn' style={{borderRadius: "10px"}}>
+                                    <Row className='d-flex align-items-center'>
                                         <Col xs={2}>
                                             <h2 className='mx-auto'>&#128640;</h2>
                                         </Col>
@@ -69,10 +71,10 @@ const Beranda = () => {
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col md={6} className='bg-white shadow p-2'>
-                                    <Row>
+                                <Col md={5} className='bg-white shadow p-2 mx-2 animate__animated animate__fadeIn' style={{borderRadius: "10px"}}>
+                                    <Row className='d-flex align-items-center'>
                                         <Col xs={2}>
-                                            <h2 className='mx-auto'>&#128640;</h2>
+                                            <h2 className='mx-auto'>&#128176;</h2>
                                         </Col>
                                         <Col xs={10}>
                                             <h6 style={{color:"#003565"}}>Attractive Total Reward</h6>
@@ -81,11 +83,11 @@ const Beranda = () => {
                                     </Row>
                                 </Col>
                             </Row>
-                            <Row>
-                                <Col md={6} className='bg-white shadow p-2'>
-                                    <Row className='align-items-center'>
+                            <Row className='mb-3'>
+                                <Col md={5} className='bg-white shadow p-3 mx-2 animate__animated animate__fadeIn' style={{borderRadius: "10px"}}>
+                                    <Row className='d-flex align-items-center'>
                                         <Col xs={2}>
-                                            <h2 className='mx-auto'>&#128640;</h2>
+                                            <h2 className='mx-auto'>&#129504;</h2>
                                         </Col>
                                         <Col xs={10}>
                                             <h6 style={{color:"#003565"}}>Unique Learning Experience</h6>
@@ -93,10 +95,10 @@ const Beranda = () => {
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col md={6} className='bg-white shadow p-2'>
-                                    <Row>
+                                <Col md={5} className='bg-white shadow p-3 mx-2 animate__animated animate__fadeIn' style={{borderRadius: "10px"}}>
+                                    <Row className='d-flex align-items-center'>
                                         <Col xs={2}>
-                                            <h2 className='mx-auto'>&#128640;</h2>
+                                            <h2 className='mx-auto'>&#127891;</h2>
                                         </Col>
                                         <Col xs={10}>
                                             <h6 style={{color:"#003565"}}>Overseas Education Opportunity</h6>
@@ -106,53 +108,53 @@ const Beranda = () => {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col className='d-flex' xs={4} style={{backgroundColor:"#EAF2FF", borderRadius:"10px"}}>
-                            <img className='img-thumbnail align-self-center' style={{border:"none"}} style={{backgroundColor:"#EAF2FF"}} src={JerRoad} alt="" />
+                        <Col className='d-flex animate__animated animate__fadeIn' xs={4} style={{backgroundColor:"#EAF2FF", borderRadius:"10px"}}>
+                            <img className='img-thumbnail align-self-center' style={{backgroundColor:"#EAF2FF", border:"none"}} src={JerRoad} alt="" />
                         </Col>
                     </Row>
                 </Container>
             </section>
             <section>
                 <Container>
-                    <Row>
+                    <Row className='d-flex align-items-center'>
                         <Col>
-                            <div className="heading mb-4">
+                            <div className="heading mb-4 animate__animated animate__fadeIn">
                                 <h1 className='font-weight-bold'>Jadilah Bagian dari Kami</h1>
                             </div>
                             <div>
-                                <div className='d-flex mb-4'>
+                                <div className='d-flex mb-3 animate__animated animate__fadeIn'>
                                     <h2>&#127759;</h2>
                                     <p className='mx-4'>Pemegang periode konsesi terlama di Asia yang mencerminkan pendapatan yang stabil.</p>
                                 </div>
-                                <div className='d-flex mb-4'>
+                                <div className='d-flex mb-3 animate__animated animate__fadeIn'>
                                     <h2>&#127380;</h2>
                                     <p className='mx-4'>Penting secara strategis dengan kepemilikan pemerintah yang kuat dimana seluruh proyek yang sedang dibangun termasuk ke dalam Proyek Strategis Nasional (PSN).</p>
                                 </div>
-                                <div className='d-flex mb-4'>
+                                <div className='d-flex mb-3 animate__animated animate__fadeIn'>
                                     <h2>&#127981;</h2>
                                     <p className='mx-4'>Industri yang Tangguh dengan fokus pemerintah yang kuat.</p>
                                 </div>
-                                <div className='d-flex mb-4'>
+                                <div className='d-flex mb-3 animate__animated animate__fadeIn'>
                                     <h2>&#128200;</h2>
                                     <p className='mx-4'>Profil keuangan yang solid di tengah ekspansi pembangunan jalan tol baru.</p>
                                 </div>
                             </div>
                         </Col>
-                        <Col className='align-item-center'>
+                        <Col>
                             <Row className='mb-4 p-0'>
                                 <Col>
-                                    <img className='img-fluid' src={Talent1} alt="" />
+                                    <img className='img-fluid animate__animated animate__fadeIn' style={{borderRadius: "10px"}} src={Talent1} alt="" />
                                 </Col>
                                 <Col>
-                                    <img className='img-fluid' src={Talent2} alt="" />
+                                    <img className='img-fluid animate__animated animate__fadeIn' style={{borderRadius: "10px"}} src={Talent2} alt="" />
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
-                                    <img className='img-fluid' src={Talent1} alt="" />
+                                    <img className='img-fluid animate__animated animate__fadeIn' style={{borderRadius: "10px"}} src={Talent1} alt="" />
                                 </Col>
                                 <Col>
-                                    <img className='img-fluid' src={Talent2} alt="" />
+                                    <img className='img-fluid animate__animated animate__fadeIn' style={{borderRadius: "10px"}} src={Talent2} alt="" />
                                 </Col>
                             </Row>
                         </Col>
@@ -161,31 +163,33 @@ const Beranda = () => {
             </section>
             <section className='py-3'>
                 <Container className='position-relative'>
-                    <div className="heading text-center">
+                    <div className="heading text-center animate__animated animate__fadeIn">
                         <h1 className='font-weight-bold'>Jadwal dan Proses Seleksi</h1>
                         <p>Jadwal masih dapat berubah berdasarkan keputusan Panitia Rekrutmen dan Seleksi.</p>
                     </div>
                     <Row>
-                        <Col className='position-relative'>
+                        <Col className='position-relative animate__animated animate__fadeIn'>
                             <div className='sticky-top' style={{paddingTop:"100px", paddingBottom:'100px'}}>
                                 <img src={Map} alt="" />
                             </div>
                         </Col>
                         <Col>
-                            <Row className='mb-3'>
+                            <Row className='mb-3 animate__animated animate__fadeInUp'>
                                 <Col xs={2}>
                                     <div className='dot mr-4' style={{backgroundColor:"#003565",width:'30px', height:'30px', borderRadius:"7px"}}></div>
                                 </Col>
                                 <Col xs={10} className="process border border-dark p-0" style={{borderRadius:"10px"}}>
-                                    <div className="p-heading px-3 py-2" style={{borderBottom: "black solid 1px"}}>
-                                        <p className='font-weight-bold m-0'>Tahap 1a : Registrasi Online dan Seleksi Administrasi</p>
-                                    </div>
-                                    <div className="p-content px-3 py-2">
-                                        <p className='m-0'>3 - 9 November 2021 Pk. 23:59 WIB</p>
+                                    <div>
+                                        <div className="p-heading px-3 py-2" style={{borderBottom: "black solid 1px"}}>
+                                            <p className='font-weight-bold m-0'>Tahap 1a : Registrasi Online dan Seleksi Administrasi</p>
+                                        </div>
+                                        <div className="p-content px-3 py-2">
+                                            <p className='m-0'>3 - 9 November 2021 Pk. 23:59 WIB</p>
+                                        </div>
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className='mb-3'>
+                            <Row className='mb-3 animate__animated animate__fadeInUp'>
                                 <Col xs={2}>
                                     <div className='dot mr-4' style={{backgroundColor:"#E9F2FE",width:'30px', height:'30px', borderRadius:"7px"}}></div>
                                 </Col>
@@ -198,7 +202,7 @@ const Beranda = () => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className='mb-3'>
+                            <Row className='mb-3 animate__animated animate__fadeInUp animate__animated animate__fadeInUp'>
                                 <Col xs={2}>
                                     <div className='dot mr-4' style={{backgroundColor:"#003565",width:'30px', height:'30px', borderRadius:"7px"}}></div>
                                 </Col>
@@ -211,7 +215,7 @@ const Beranda = () => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className='mb-3'>
+                            <Row className='mb-3 animate__animated animate__fadeInUp'>
                                 <Col xs={2}>
                                     <div className='dot mr-4' style={{backgroundColor:"#E9F2FE",width:'30px', height:'30px', borderRadius:"7px"}}></div>
                                 </Col>
@@ -224,7 +228,7 @@ const Beranda = () => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className='mb-3'>
+                            <Row className='mb-3 animate__animated animate__fadeInUp'>
                                 <Col xs={2}>
                                     <div className='dot mr-4' style={{backgroundColor:"#003565",width:'30px', height:'30px', borderRadius:"7px"}}></div>
                                 </Col>
@@ -237,7 +241,7 @@ const Beranda = () => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className='mb-3'>
+                            <Row className='mb-3 animate__animated animate__fadeInUp'>
                                 <Col xs={2}>
                                     <div className='dot mr-4' style={{backgroundColor:"#E9F2FE",width:'30px', height:'30px', borderRadius:"7px"}}></div>
                                 </Col>
@@ -250,7 +254,7 @@ const Beranda = () => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className='mb-3'>
+                            <Row className='mb-3 animate__animated animate__fadeInUp'>
                                 <Col xs={2}>
                                     <div className='dot mr-4' style={{backgroundColor:"#003565",width:'30px', height:'30px', borderRadius:"7px"}}></div>
                                 </Col>
@@ -263,7 +267,7 @@ const Beranda = () => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className='mb-3'>
+                            <Row className='mb-3 animate__animated animate__fadeInUp'>
                                 <Col xs={2}>
                                     <div className='dot mr-4' style={{backgroundColor:"#E9F2FE",width:'30px', height:'30px', borderRadius:"7px"}}></div>
                                 </Col>
@@ -276,7 +280,7 @@ const Beranda = () => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className='mb-3'>
+                            <Row className='mb-3 animate__animated animate__fadeInUp'>
                                 <Col xs={2}>
                                     <div className='dot mr-4' style={{backgroundColor:"#003565",width:'30px', height:'30px', borderRadius:"7px"}}></div>
                                 </Col>
@@ -289,7 +293,7 @@ const Beranda = () => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className='mb-3'>
+                            <Row className='mb-3 animate__animated animate__fadeInUp'>
                                 <Col xs={2}>
                                     <div className='dot mr-4' style={{backgroundColor:"#E9F2FE",width:'30px', height:'30px', borderRadius:"7px"}}></div>
                                 </Col>
@@ -302,7 +306,7 @@ const Beranda = () => {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className='mb-3'>
+                            <Row className='mb-3 animate__animated animate__fadeInUp'>
                                 <Col xs={2}>
                                     <div className='dot mr-4' style={{backgroundColor:"#003565",width:'30px', height:'30px', borderRadius:"7px"}}></div>
                                 </Col>
@@ -327,46 +331,46 @@ const Beranda = () => {
                 </Container>
                 <div className="desc-ketentuan">
                     <Container>
-                        <Row className="mb-3">
+                        <Row className="mb-3 text-sm">
                             <Col className='d-flex'>
                                 <h2 className="mx-2">&#9989;</h2>
-                                <p>Setiap pelamar hanya diperbolehkan mendaftar 1 (satu) kali.</p>
+                                <p className='text-xs'>Setiap pelamar hanya diperbolehkan mendaftar 1 (satu) kali.</p>
                             </Col>
                             <Col className='d-flex'>
-                                <h2 className="mx-2">&#9989;</h2>
-                                <p>Pendaftaran dilakukan secara online melalui https://ppm-rekrutmen.com/jasamarga. Panitia tidak menerima lamaran melalui pos atau media pengiriman lainnya.</p>
+                                <h2 className="mx-2">&#127760;</h2>
+                                <p className='text-xs'>Pendaftaran dilakukan secara online melalui <b>https://ppm-rekrutmen.com/jasamarga</b>. Panitia tidak menerima lamaran melalui pos atau media pengiriman lainnya.</p>
                             </Col>
                             <Col className='d-flex'>
-                                <h2 className="mx-2">&#9989;</h2>
-                                <p>Bagi Pelamar yang pernah mengirimkan lamaran, diwajibkan memperbaharui lamaran dengan melakukan registrasi online melalui situs-web ini.</p>
+                                <h2 className="mx-2">&#128187;</h2>
+                                <p className='text-xs'>Bagi Pelamar yang pernah mengirimkan lamaran, diwajibkan memperbaharui lamaran dengan melakukan registrasi online melalui situs-web ini.</p>
                             </Col>
                         </Row>
                         <Row className="mb-3">
                             <Col className='d-flex'>
                                 <h2 className="mx-2">&#9989;</h2>
-                                <p>Proses rekrutmen dan seleksi seluruhnya dilakukan oleh PPM Manajemen, kecuali Wawancara User dilakukan oleh Pihak Perusahaan.</p>
+                                <p className='text-xs'>Proses rekrutmen dan seleksi seluruhnya dilakukan oleh PPM Manajemen, kecuali Wawancara User dilakukan oleh Pihak Perusahaan.</p>
                             </Col>
                             <Col className='d-flex'>
-                                <h2 className="mx-2">&#9989;</h2>
-                                <p>Seluruh kegiatan seleksi online dan pengumuman tiap tahapan seleksi akan melalui https://ppm-rekrutmen.com/jasamarga.</p>
+                                <h2 className="mx-2">&#128226;</h2>
+                                <p className='text-xs' style={{backgroundColor: "#E9F2FE"}}>Seluruh kegiatan seleksi online dan pengumuman tiap tahapan seleksi akan melalui <b>https://ppm-rekrutmen.com/jasamarga.</b></p>
                             </Col>
                             <Col className='d-flex'>
-                                <h2 className="mx-2">&#9989;</h2>
-                                <p>Panitia dan Manajemen Perusahaan berhak sepenuhnya menetapkan daftar kandidat yang dinilai memenuhi kualifikasi pada setiap tahapan seleksi.</p>
+                                <h2 className="mx-2">&#128196;</h2>
+                                <p className='text-xs'>Panitia dan Manajemen Perusahaan berhak sepenuhnya menetapkan daftar kandidat yang dinilai memenuhi kualifikasi pada setiap tahapan seleksi.</p>
                             </Col>
                         </Row>
                         <Row>
                             <Col className='d-flex'>
-                                <h2 className="mx-2">&#9989;</h2>
-                                <p>Seluruh tahapan proses rekrutmen dan seleksi tidak dipungut biaya apapun. Apabila ada pihak yang berusaha meminta biaya/menjanjikan sesuatu/menawarkan bantuan atas proses rekrutmen dan seleksi dapat melapor ke call center PPM Manajemen.</p>
+                                <h2 className="mx-2">&#128222;</h2>
+                                <p className='text-xs'>Seluruh tahapan proses rekrutmen dan seleksi <b>tidak dipungut biaya apapun</b>. Apabila ada pihak yang berusaha meminta biaya/menjanjikan sesuatu/menawarkan bantuan atas proses rekrutmen dan seleksi dapat melapor ke call center PPM Manajemen.</p>
                             </Col>
                             <Col className='d-flex'>
-                                <h2 className="mx-2">&#9989;</h2>
-                                <p>Seluruh biaya akomodasi dan transportasi selama proses seleksi menjadi tanggungan pelamar.</p>
+                                <h2 className="mx-2">&#128176;</h2>
+                                <p className='text-xs'>Seluruh biaya akomodasi dan transportasi selama proses seleksi menjadi tanggungan pelamar.</p>
                             </Col>
                             <Col className='d-flex'>
-                                <h2 className="mx-2">&#9989;</h2>
-                                <p>Masa waktu registrasi online adalah 3 - 9 November 2021 2021 Pk. 23:59 WIB.</p>
+                                <h2 className="mx-2">&#128197;</h2>
+                                <p className='text-xs'>Masa waktu registrasi online adalah 3 - 9 November 2021 2021 Pk. 23:59 WIB.</p>
                             </Col>
                         </Row>
                     </Container>
@@ -466,7 +470,7 @@ const Beranda = () => {
                     </ol>
                 </Container>
             </section>
-            <section>
+            <section className='pb-5'>
                 <Container>
                     <Row>
                         <Col>
@@ -474,23 +478,23 @@ const Beranda = () => {
                                 <h1 className='font-weight-bold text-center'>Alur Registrasi Online</h1>
                             </div>
                             <div className="tabs d-flex justify-content-around align-items-center mb-5">
-                                <Button className='px-3 bg-white text-dark font-weight-bold border-none shadow rounded' onClick={() => setTabActive("1")}>
-                                    <p>Step 1</p>
+                                <Button className='px-5 bg-white text-dark font-weight-bold shadow-sm rounded' style={{border:"none", borderBottom: tabActive === "1" ? "solid 2px #003565" : "#fff"}} onClick={() => setTabActive("1")}>
+                                    Step 1
                                 </Button>
-                                <Button className='px-3 bg-white text-dark font-weight-bold border-none shadow rounded' onClick={() => setTabActive("2")}>
-                                    <p>Step 2</p>
+                                <Button className='px-5 bg-white text-dark font-weight-bold shadow-sm rounded' style={{border:"none", borderBottom: tabActive === "2" ? "solid 2px #003565" : "#fff"}} onClick={() => setTabActive("2")}>
+                                    Step 2
                                 </Button>
-                                <Button className='px-3 bg-white text-dark font-weight-bold border-none shadow rounded' onClick={() => setTabActive("3")}>
-                                    <p>Step 3</p>
+                                <Button className='px-5 bg-white text-dark font-weight-bold shadow-sm rounded' style={{border:"none", borderBottom: tabActive === "3" ? "solid 2px #003565" : "#fff"}} onClick={() => setTabActive("3")}>
+                                    Step 3
                                 </Button>
-                                <Button className='px-3 bg-white text-dark font-weight-bold border-none shadow rounded' onClick={() => setTabActive("4")}>
-                                    <p>Step 4</p>
+                                <Button className='px-5 bg-white text-dark font-weight-bold shadow-sm rounded' style={{border:"none", borderBottom: tabActive === "4" ? "solid 2px #003565" : "#fff"}} onClick={() => setTabActive("4")}>
+                                    Step 4
                                 </Button>
-                                <Button className='px-3 bg-white text-dark font-weight-bold border-none shadow rounded' onClick={() => setTabActive("5")}>
-                                    <p>Step 5</p>
+                                <Button className='px-5 bg-white text-dark font-weight-bold shadow-sm rounded' style={{border:"none", borderBottom: tabActive === "5" ? "solid 2px #003565" : "#fff"}} onClick={() => setTabActive("5")}>
+                                    Step 5
                                 </Button>
-                                <Button className='px-3 bg-white text-dark font-weight-bold border-none shadow rounded' onClick={() => setTabActive("6")}>
-                                    <p>Step 6</p>
+                                <Button className='px-5 bg-white text-dark font-weight-bold shadow-sm rounded' style={{border:"none", borderBottom: tabActive === "6" ? "solid 2px #003565" : "#fff"}} onClick={() => setTabActive("6")}>
+                                    Step 6
                                 </Button>
                             </div>
 
@@ -576,7 +580,7 @@ const Beranda = () => {
                                             </ol>
                                         </li>
                                     </ol>
-                                    <Button className='mt-4 font-weight-bold bg-warning py-2 px-4' style={{border:"none"}}>Daftar</Button>
+                                    <Button className='mt-4 font-weight-bold bg-warning py-2 px-4' style={{border:"none"}}><Link className='text-white' to="/pendaftaran">Daftar</Link></Button>
                                 </Col>
                             </Row>
                             <Row className='text-white pt-4'>
@@ -603,7 +607,7 @@ const Beranda = () => {
                                         </li>
                                         <li><b>Mendapatkan rekomendasi dari Atasan.</b></li>
                                     </ol>
-                                    <Button className='my-4 font-weight-bold bg-warning py-2 px-4' style={{border:"none"}}>Daftar</Button>
+                                    <Button className='my-4 font-weight-bold bg-warning py-2 px-4' style={{border:"none"}}><Link className='text-white' to="/pendaftaran">Daftar</Link></Button>
                                 </Col>
                             </Row>
                         </Col>
