@@ -29,7 +29,7 @@ const Beranda = () => {
                     <Row className='d-flex'>
                         <Col className='content py-5 d-flex align-items-center'>
                             <div>
-                                <p className='text-sm font-weight-bold d-inline-block border rounded-pill p-2'>Reg. Online : 3 - 9 November 2021 Pk. 23:59 WIB</p>
+                                <p className='text-sm font-weight-bold d-inline-block border border-dark rounded-pill p-2'>Reg. Online : 3 - 9 November 2021 Pk. 23:59 WIB</p>
                                 <h1 className="font-weight-bolder animate__animated animate__bounceIn" style={{color: "#003565"}}>Toll Road Industry Leader in Indonesia Needs Future Leader JET ROADSTER 2021</h1>
                                 <p>Perhatian! PT Jasa Marga (Persero) Tbk tidak memungut biaya apapun selama proses seleksi.</p>
                                 <div>
@@ -45,7 +45,7 @@ const Beranda = () => {
                 </Container>
             </div>
 
-            <section className="program">
+            <section id='information' className="program">
                 <Container>
                     <Row className='py-5'>
                         <Col xs={8}>

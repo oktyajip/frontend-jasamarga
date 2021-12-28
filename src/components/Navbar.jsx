@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Navbar, Nav, NavDropdown, Container, Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, matchPath } from 'react-router-dom'
 import logoppm from '../Images/logoppm.png'
 import ModalLogin from '../components/Modal/ModalLogin'
 
 const NavbarMenu = () => {
     const [navbarTrans, setNavbarTrans] = useState(false)
     const [modalShow, setModalShow] = React.useState(false)
+    const { pathname } = useLocation()
+    const onBeranda = matchPath("/", pathname)
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -24,7 +26,7 @@ const NavbarMenu = () => {
             <ModalLogin 
                 show={modalShow}
                 onHide={() => setModalShow(false)} />
-            <Navbar className={`${navbarTrans ? "bg-transparent" : "bg-white"} fixed-top`} expand="lg">
+            <Navbar className={`${navbarTrans && onBeranda ? "bg-transparent" : "bg-white"} fixed-top shadow-sm`} expand="lg">
                 <Container className='d-flex justify-content-between'>
                     <Navbar.Brand href="/">
                         <img src={logoppm} alt="" />
